@@ -8,7 +8,7 @@ class CustomerData{
     public $email;
 
     public function StoreData(){
-
+        
     }
 
     public function ReadData(){

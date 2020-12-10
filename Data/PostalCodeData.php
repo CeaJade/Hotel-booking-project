@@ -5,7 +5,6 @@ class PostalCodeData{
     
     public function GetCityName($postalCode){
         
-
         $sql = "SELECT * FROM postalcode WHERE postal_code = '".$postalCode."'";
         $result = OpenCon()->query($sql);
 
