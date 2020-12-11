@@ -4,6 +4,8 @@ class RoomData{
     public $roomNumber;
     public $basePrice;
     public $addition;
+    public $available;
+
 
     public function GetAdditions(){
 
