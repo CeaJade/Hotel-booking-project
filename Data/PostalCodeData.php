@@ -3,7 +3,7 @@ class PostalCodeData{
     public $postalCode;
     public $cityName;
     
-    public function GetCityName($postalCode){
+    public static function GetCityName($postalCode){
         
         $sql = "SELECT * FROM postalcode WHERE postal_code = '".$postalCode."'";
         $result = OpenCon()->query($sql);

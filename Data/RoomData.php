@@ -59,4 +59,21 @@ class RoomData{
             return false;
         }
     }
+
+    public static function GetRoom($id){
+        $mysqli = OpenCon();
+        $id = $mysqli->real_escape_string($id);
+        $sql = "SELECT * FROM room WHERE room_number = '$id'";
+        $result = $mysqli->query($sql);
+
+        if ($result->num_rows > 0){
+            $row = $result->fetch_assoc();
+            $room = new RoomData;
+            $room->roomNumber = $row['room_number'];
+            $room->basePrice = $row['price'];
+            return $room;
+        } else{
+            return false;
+        }
+    }
 }
