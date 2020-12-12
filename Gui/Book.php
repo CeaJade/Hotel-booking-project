@@ -5,7 +5,7 @@
     <?php
      if($confirm) {
         echo '<div class="alert alert-success">';
-            echo 'AYY YOU MAGNIFCENT BASTARD';
+            echo 'Reservation completed';
         echo '</div>';
     }
     ?>

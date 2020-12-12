@@ -1,6 +1,6 @@
 <?php
     abstract class Manager {
-        public function requireLogin() {
-            // Magic function that doesnt do anything
+        public function RequireLogin() {
+            //For log in system for employees and owners
         }
     }

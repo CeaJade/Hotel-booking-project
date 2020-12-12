@@ -9,7 +9,9 @@
     if(strlen($uri)) {
         $uri = explode('/', $uri);
         $logic = array_shift($uri);
-        $action = array_shift($uri);
+        $action = ucfirst(array_shift($uri));
+    } else {
+        $uri = array();
     }
     
     $logic = ucfirst($logic);

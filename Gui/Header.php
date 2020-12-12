@@ -6,10 +6,11 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <script src="/assets/postalcode.js"></script>
+        <script src="/assets/Cleanup.js"></script>
     </head>
     <body>
         <nav class="nav">
             <a class="nav-link" href="/">Home</a>
             <a class="nav-link" href="/reservation/all">Reservations</a>
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="/Cleanup/all">Cleanup</a>
         </nav>

@@ -2,10 +2,10 @@
 include_once "Data/ReservationData.php";
     class ReservationManager extends Manager {
         public function __construct() {
-            $this->requireLogin();
+            $this->RequireLogin();
         }
 
-        public function all() {
+        public function All() {
             $reservations = ReservationData::ReadReservationData();
             include_once "Gui/Reservation.php";
         }

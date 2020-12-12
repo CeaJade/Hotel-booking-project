@@ -9,11 +9,10 @@ class RoomData{
 
     public function GetAdditions(){
 
-        $sql = "SELECT * FROM addition a JOIN room_addition ra ON a.addition_id=ra.addition_id WHERE room_number = $this->roomNumber"; //Add a join
+        $sql = "SELECT * FROM addition a JOIN room_addition ra ON a.addition_id=ra.addition_id WHERE room_number = $this->roomNumber";
         $result = OpenCon()->query($sql);
 
         if ($result->num_rows > 0){
-            //outputs city from postal code row
             $additions = array();
             while($row = $result->fetch_assoc()) {
                 $addition = new AdditionData;
@@ -46,7 +45,7 @@ class RoomData{
         $result = OpenCon()->query($sql);
 
         if ($result->num_rows > 0){
-            //outputs city from postal code row
+
             $rooms = array();
             while($row = $result->fetch_assoc()) {
                 $room = new RoomData;

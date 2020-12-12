@@ -10,10 +10,10 @@ class RoomManager extends Manager {
         include_once "Gui/Rooms.php";
     }
 
-    public function book($roomNumber) {
+    public function Book($roomNumber) {
         $confirm = false;
         if(!empty($_POST)) {
-            // process data
+            //Process data
             $customer = new CustomerData;
             $customer->name = $_POST['name'];
             $customer->address = $_POST['address'];
@@ -22,7 +22,7 @@ class RoomManager extends Manager {
             $customer->postalcode = $_POST['postal'];
             $customer->StoreCustomerData();
 
-            // Reservation!
+            //Reservation!
             $reservation = new ReservationData;
             $reservation->cusID = $customer->cusID;
             $reservation->room = $roomNumber;

@@ -3,7 +3,7 @@
 include_once "Data/PostalCodeData.php";
 class PostalManager {
 
-    public function city($postal){
+    public function City($postal){
         echo PostalCodeData::GetCityName($postal);
     }
 }

@@ -41,6 +41,7 @@ class CustomerData{
         }
     }
 
+    //Function to delete user, not used in the product
     public function DeleteCustomerData(){
         $mysqli = OpenCon();
 
